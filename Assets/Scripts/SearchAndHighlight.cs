@@ -2,21 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SearchAndHighlight : MonoBehaviour
 {
     [SerializeField]
     private List<Character> allCharacters;
+
+    [SerializeField]
+    private InputField inputField;
     
     public void SubmitButtonClicked()
     {
-        
+        HighlightMatches(
+           GetMatches(inputField.text));
     }
 
     public void SearchInputTextValueChanged(string inputText)
     {
-       HighlightMatches(
-           GetMatches(inputText));
+       
     }
 
     private List<Character> GetMatches(string searchInput)
@@ -28,10 +32,20 @@ public class SearchAndHighlight : MonoBehaviour
 
         foreach (var character in allCharacters)
         {
-            
+            foreach (var item in character.AttributesList)
+            {
+                var attributeWords = item.ToLower().Split(' ');
+
+                var match = attributeWords.Any(word => keywords.Contains(word));
+
+                if (match)
+                {
+                    matchingCharacters.Add(character);
+                }
+            }
         }
         
-        return new List<Character>();
+        return matchingCharacters;
     }
 
     private void HighlightMatches(List<Character> matchingCharacters)

@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224599142331208838}
   - component: {fileID: 222964537082027828}
+  - component: {fileID: 114954250937413848}
   m_Layer: 5
   m_Name: Character Panel
   m_TagString: Untagged
@@ -115,6 +116,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114954250937413848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452161865034622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb7c592b439824e9675e54c1c2fcc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributeList:
+  - pizza
+  - hot sauce
+  highlight: {fileID: 1314153858404428}
 --- !u!222 &222431946238552076
 CanvasRenderer:
   m_ObjectHideFlags: 1

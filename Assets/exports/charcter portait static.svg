@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="184px" viewBox="0 0 170 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>charcter portait static</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="137" width="168" height="1"></rect>
+        <filter x="-4.2%" y="-500.0%" width="106.0%" height="1400.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-screen-copy" transform="translate(-37.000000, -78.000000)">
+            <g id="charcter-portait-static" transform="translate(38.000000, 79.000000)">
+                <polygon id="Fill-1" stroke="#B4CECB" fill="#010310" points="0 0 0 76.891 0 158.72 29.93 182 168 182 168 6.349 71.832 6.349 57.295 0"></polygon>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="0" y="41" width="1" height="8"></rect>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="0" y="108" width="2" height="8"></rect>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="1" y="96" width="1" height="2"></rect>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="0" y="92" width="1" height="2"></rect>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="0" y="100" width="1" height="4"></rect>
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#B4CECB" stroke-width="1" stroke-linejoin="square" x="0.5" y="137.5" width="167" height="1"></rect>
+                </g>
+                <rect id="Rectangle" stroke="#B4CECB" fill-rule="nonzero" x="84.5" y="147.5" width="73" height="20"></rect>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="87" y="150" width="6" height="15"></rect>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="95" y="150" width="4" height="15"></rect>
+                <rect id="Rectangle" fill="#B4CECB" fill-rule="nonzero" x="101" y="150" width="2" height="15"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

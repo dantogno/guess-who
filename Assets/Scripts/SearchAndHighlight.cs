@@ -16,9 +16,10 @@ public class SearchAndHighlight : MonoBehaviour
 
     private void Start()
     {
-        string testString = "foxes";
-        string testsubstring = "fox";
-        Debug.Log(testString.Contains(testsubstring));
+        //string testString = "foxes";
+        //string testsubstring = "fox";
+        //Debug.Log(testString.Contains(testsubstring));
+        // output: true
     }
 
     public void SubmitButtonClicked()
@@ -29,6 +30,11 @@ public class SearchAndHighlight : MonoBehaviour
         GetMatchingCharacters( GetSearchKeywords(inputField.text));
     }
 
+    public void EndedEditingInputText(string input)
+    {
+        RemoveAllHighlights();
+        HighlightCharacters(GetMatchingCharacters(GetSearchKeywords(input)));
+    }
 
 
     private List<Character> GetMatchingCharacters(IEnumerable<string> keywords)
@@ -41,19 +47,13 @@ public class SearchAndHighlight : MonoBehaviour
             {
                 var entryWords = entry.ToLower().Split(' ');
 
-                // var match = attributeWords.Any(word => keywords.Contains(word));
-
                 foreach (var word in entryWords)
                 {
                     if (keywords.Contains(word))
+                    {
                         Debug.Log(word);
-                }
-
-                bool match = true;
-
-                if (match)
-                {
-                    matchingCharacters.Add(character);
+                        matchingCharacters.Add(character);
+                    }
                 }
             }
         }

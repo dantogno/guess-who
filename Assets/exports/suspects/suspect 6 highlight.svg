@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="134px" height="101px" viewBox="0 0 134 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>suspect 6 highlight</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FD404F" offset="0%"></stop>
+            <stop stop-color="#FF8F60" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="characters" transform="translate(-242.000000, -581.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero" stroke="#FFFFFF">
+            <path d="M346.735861,616.400665 L346.791304,616.508373 L346.735861,616.279531 L346.735861,616.400665 Z M363.90281,651.738009 C363.971466,651.769276 364.038934,651.799297 364.105159,651.828088 C364.342209,651.93114 364.514873,651.997944 364.612486,652.031625 L364.417532,651.209963 L363.90281,651.738009 Z M375.372118,681.5 L375.512755,682.112214 L376,681.5 L375.372118,681.5 Z M242.859123,681.5 L242,681.5 L242.437582,682.241914 C242.46954,682.184107 242.533164,682.070548 242.627251,681.904959 C242.698781,681.77907 242.776109,681.643967 242.859123,681.5 Z M268.960974,651.732191 C270.302233,651.276785 271.606154,651.042589 272.869436,651.042589 L272.901104,652.041585 C272.864281,652.043922 272.798146,652.047224 272.70567,652.050461 C271.602972,652.08905 270.307919,652.02005 269.060687,651.753929 C269.027285,651.746802 268.994047,651.739556 268.960974,651.732191 Z" id="suspect-6-highlight"></path>
+        </g>
+    </g>
+</svg>

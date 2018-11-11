@@ -1,1 +1,47 @@
-<svg id="b1688c76-3c1b-4b62-9942-01c763dfd0b7" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 130"><title>Artboard 1</title><g id="b7560921-0599-440b-85aa-8b151b2ebbb8" data-name="Page-1"><g id="a1563c35-43a2-4ce1-b0bb-48a499408077" data-name="characters"><path id="ea2fe793-5cff-4e48-9327-77f80ca856ad" data-name="suspect-1" d="M45.1,48.5s-3.5,2.3,0,8.1v7.7l4.2,2.3,4.6,5.8V83.5L43.5,97l5.2,15.8L84,121.6l13.5-8.5L87.1,102.3s3.5-.4,4.6-3.1S97.5,85,97.5,85l5.4-8.5,1.9-7.3,6.6-6.5V58.9l-6.9-.4,2.7-15.8,4.2-5.4-1.9-6.5,4.6-3.1s15.8-11.5,9.3-10l-18.5,1.9L98.7,15l-5-2.7H84.3V8.5h-6L65.6,15.4l3.5-6.9L49.8,18.9c-.1,0-11.3,22.3-4.7,29.6" fill="#010310" stroke="#b4cecb" fill-rule="evenodd"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="b1688c76-3c1b-4b62-9942-01c763dfd0b7"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 168 130"
+	 style="enable-background:new 0 0 168 130;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#010310;stroke:#B4CECB;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{opacity:0.75;mask:url(#SVGID_1_);}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#FFFFFF;}
+</style>
+<title>Artboard 1</title>
+<g id="b7560921-0599-440b-85aa-8b151b2ebbb8">
+	<g>
+		<g>
+			<g id="a1563c35-43a2-4ce1-b0bb-48a499408077_15_">
+				<path id="ea2fe793-5cff-4e48-9327-77f80ca856ad_15_" class="st0" d="M45.1,48.5c0,0-3.5,2.3,0,8.1v7.7l4.2,2.3l4.6,5.8v11.1
+					L43.5,97l5.2,15.8l35.3,8.8l13.5-8.5l-10.4-10.8c0,0,3.5-0.4,4.6-3.1S97.5,85,97.5,85l5.4-8.5l1.9-7.3l6.6-6.5v-3.8l-6.9-0.4
+					l2.7-15.8l4.2-5.4l-1.9-6.5l4.6-3.1c0,0,15.8-11.5,9.3-10l-18.5,1.9L98.7,15l-5-2.7h-9.4V8.5h-6l-12.7,6.9l3.5-6.9L49.8,18.9
+					C49.7,18.9,38.5,41.2,45.1,48.5"/>
+			</g>
+		</g>
+	</g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="42.5" y="7.3" width="82.9" height="114.8">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="42.5" y="7.3" width="82.9" height="114.8" id="SVGID_1_">
+		<g class="st1">
+			<image style="overflow:visible;" width="88" height="120" xlink:href="1DDDAFE1379DA554.jpg"  transform="matrix(1 0 0 1 40 5)">
+			</image>
+		</g>
+	</mask>
+	<g class="st2">
+		<g>
+			<g id="a1563c35-43a2-4ce1-b0bb-48a499408077_12_">
+				<path id="ea2fe793-5cff-4e48-9327-77f80ca856ad_12_" class="st3" d="M45.1,48.5c0,0-3.5,2.3,0,8.1v7.7l4.2,2.3l4.6,5.8v11.1
+					L43.5,97l5.2,15.8l35.3,8.8l13.5-8.5l-10.4-10.8c0,0,3.5-0.4,4.6-3.1S97.5,85,97.5,85l5.4-8.5l1.9-7.3l6.6-6.5v-3.8l-6.9-0.4
+					l2.7-15.8l4.2-5.4l-1.9-6.5l4.6-3.1c0,0,15.8-11.5,9.3-10l-18.5,1.9L98.7,15l-5-2.7h-9.4V8.5h-6l-12.7,6.9l3.5-6.9L49.8,18.9
+					C49.7,18.9,38.5,41.2,45.1,48.5"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

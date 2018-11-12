@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1012px" height="470px" viewBox="0 0 1012 470" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>scanBox</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#B5FEFF" offset="0%"></stop>
+            <stop stop-color="#B5FEFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="storyboard-A" transform="translate(-36.000000, -638.000000)" fill-rule="nonzero">
+            <g id="scanBox" transform="translate(36.000000, 638.000000)">
+                <rect id="Rectangle" stroke="#B7FFFD" fill="url(#linearGradient-1)" x="16.5" y="16.5" width="979" height="435"></rect>
+                <g id="Group-3" fill="#B8FFFD">
+                    <path d="M8,-2.20436424e-15 L40,3.6739404e-15 L40,8 L8,8 L8,40 L0,40 L0,0 L8,0 Z" id="Combined-Shape"></path>
+                </g>
+                <g id="Group-3" transform="translate(992.000000, 20.000000) rotate(-270.000000) translate(-992.000000, -20.000000) translate(972.000000, 0.000000)" fill="#B8FFFD">
+                    <path d="M8,-2.20436424e-15 L40,3.6739404e-15 L40,8 L8,8 L8,40 L0,40 L0,0 L8,0 Z" id="Combined-Shape"></path>
+                </g>
+                <g id="Group-3" transform="translate(20.000000, 448.000000) rotate(-90.000000) translate(-20.000000, -448.000000) translate(0.000000, 428.000000)" fill="#B8FFFD">
+                    <path d="M8,-2.20436424e-15 L40,3.6739404e-15 L40,8 L8,8 L8,40 L0,40 L0,0 L8,0 Z" id="Combined-Shape"></path>
+                </g>
+                <g id="Group-3" transform="translate(992.000000, 450.000000) rotate(-180.000000) translate(-992.000000, -450.000000) translate(972.000000, 430.000000)" fill="#B8FFFD">
+                    <path d="M8,-5.99953135e-15 L40,-1.21226719e-16 L40,8 L8,8 L8,40 L0,40 L0,-3.79516712e-15 L8,-3.79516712e-15 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

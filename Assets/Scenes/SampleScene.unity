@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 95514353}
   m_Layer: 0
   m_Name: Evidence
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -502,6 +502,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 241690636}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &126641136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126641138}
+  - component: {fileID: 126641137}
+  m_Layer: 0
+  m_Name: ShowLookedAtEvidence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &126641137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126641136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0869e463b3099ae45b7289990e019b92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1998422508}
+--- !u!4 &126641138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126641136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.0422, y: 3.907, z: 0.4738898}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &139647902
 GameObject:
@@ -794,7 +835,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1888507469472846, guid: ada3d76a085928a4eaa346a16f92fe10, type: 2}
       propertyPath: m_Name
-      value: Directional Light (1)
+      value: Directional Light
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada3d76a085928a4eaa346a16f92fe10, type: 2}
@@ -4795,6 +4836,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1984173507}
   m_Script: {fileID: 11500000, guid: 96cb7c592b439824e9675e54c1c2fcc4, type: 3}
+--- !u!20 &1998422508 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20701859557330058, guid: ebea498bbd642964692c804580a37994,
+    type: 2}
+  m_PrefabInternal: {fileID: 1899136830}
 --- !u!43 &2005033270
 Mesh:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShowLookedAtEvidence : MonoBehaviour
 {
     [SerializeField]
-    private Camera camera;
+    private new Camera camera;
 
     private const string evidenceTag = "Evidence";
     private int lookedAtEvidenceAnimTrigger, hideAnimTrigger;

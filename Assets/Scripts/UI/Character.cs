@@ -12,4 +12,9 @@ public class Character : MonoBehaviour
 
     public List<string> AttributesList => attributeList;
     public GameObject Highlight => highlight;
+
+    public void ClickedCharacter()
+    {
+        SuspectInterface.Instance.GoToSuspectSelectedState();
+    }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Data.Entity.Design.PluralizationServices;
+using System.Data.Entity.Infrastructure.Pluralization;
+//using System.Data.Entity.Design.PluralizationServices;
 using System.Globalization;
 using System.Linq;
 using UnityEngine;
@@ -27,12 +28,15 @@ public class SearchAndHighlight : MonoBehaviour
         //HighlightCharacters(
         //   GetMatchingCharacters(inputField.text));
 
-        GetMatchingCharacters( GetSearchKeywords(inputField.text));
+        //GetMatchingCharacters( GetSearchKeywords(inputField.text));
     }
 
     public void EndedEditingInputText(string input)
-    {
+    {             
         RemoveAllHighlights();
+        var searchKeywords = GetSearchKeywords(input);
+        var matchingCharacters = GetMatchingCharacters(searchKeywords);
+        HighlightCharacters(matchingCharacters);
         HighlightCharacters(GetMatchingCharacters(GetSearchKeywords(input)));
     }
 
@@ -68,7 +72,7 @@ public class SearchAndHighlight : MonoBehaviour
     /// <returns>IEnumerable of singular and plural form of all search terms.</returns>
     private IEnumerable<string> GetSearchKeywords(string searchInput)
     {
-        var pluralizationService = PluralizationService.CreateService(CultureInfo.CurrentCulture);
+        EnglishPluralizationService pluralizationService = new EnglishPluralizationService();
         var keywords = searchInput.ToLower().Split(' ');
         var singularsAndPlurals = new List<string>();
 

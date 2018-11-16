@@ -5,10 +5,11 @@ using UnityEngine;
 public class ToggleModes : MonoBehaviour
 {
     [SerializeField]
-    private GameObject suspectInterfacePanel;
+    private GameObject suspectInterfacePanel, arCamera;
 
     public void SuspectListToggled(bool isOn)
     {
         suspectInterfacePanel.SetActive(isOn);
+        arCamera.SetActive(!isOn);
     }
 }

@@ -12,9 +12,6 @@ public class SearchAndHighlight : MonoBehaviour
     [SerializeField]
     private List<Character> allCharacters;
 
-    [SerializeField]
-    private InputField inputField;
-
     private void Start()
     {
         //string testString = "foxes";

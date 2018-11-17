@@ -340,6 +340,8 @@ MonoBehaviour:
   - pizza
   - hot sauce
   highlight: {fileID: 1504909000888324}
+  portraitImage: {fileID: 114927979568701056}
+  portraitHighlightImage: {fileID: 114179901594809358}
 --- !u!222 &222321592525806116
 CanvasRenderer:
   m_ObjectHideFlags: 1

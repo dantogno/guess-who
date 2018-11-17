@@ -355,7 +355,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 37828855}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -2570,6 +2570,54 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &401362881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401362882}
+  - component: {fileID: 401362883}
+  m_Layer: 5
+  m_Name: CaseFileSelectCanvasGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &401362882
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 401362881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 547292290}
+  - {fileID: 419027082}
+  - {fileID: 2080168564}
+  m_Father: {fileID: 1205862530}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &401362883
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 401362881}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &419027081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,12 +2645,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 924847443}
-  m_Father: {fileID: 1205862530}
-  m_RootOrder: 2
+  m_Father: {fileID: 401362882}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 562, y: 405.1}
+  m_AnchoredPosition: {x: 72, y: 405.09998}
   m_SizeDelta: {x: 518, y: 448.1}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &419027083
@@ -2791,12 +2839,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1481121686}
-  m_Father: {fileID: 1205862530}
-  m_RootOrder: 4
+  m_Father: {fileID: 401362882}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12, y: 0.3472916}
   m_AnchorMax: {x: 0.12, y: 0.34729165}
-  m_AnchoredPosition: {x: 0, y: -70}
+  m_AnchoredPosition: {x: -372.40002, y: -347.92917}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &547292291
@@ -5605,10 +5653,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1918690654}
-  - {fileID: 2080168564}
-  - {fileID: 419027082}
   - {fileID: 1229801338}
-  - {fileID: 547292290}
+  - {fileID: 401362882}
   m_Father: {fileID: 1307293180}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6264,7 +6310,7 @@ GameObject:
   - component: {fileID: 1229801340}
   - component: {fileID: 1229801339}
   m_Layer: 5
-  m_Name: Bio Panel
+  m_Name: FolderBox Text Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6283,7 +6329,7 @@ RectTransform:
   - {fileID: 1913126783}
   - {fileID: 1514222126}
   m_Father: {fileID: 1205862530}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6804,7 +6850,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15.28}
+  m_AnchoredPosition: {x: 0, y: -15.280029}
   m_SizeDelta: {x: 20, y: -32.28}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1308108987
@@ -6845,8 +6891,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1845029979}
   m_HandleRect: {fileID: 1845029978}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5020057
+  m_Value: 0
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9202,7 +9248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 410.7, y: 297.92743}
+  m_AnchoredPosition: {x: 410.7, y: 570}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1843032059
@@ -9689,7 +9735,7 @@ GameObject:
   - component: {fileID: 1913126785}
   - component: {fileID: 1913126784}
   m_Layer: 5
-  m_Name: Bio label
+  m_Name: FolderBox Text label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10442,7 +10488,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1205862530}
+    m_TransformParent: {fileID: 401362882}
     m_Modifications:
     - target: {fileID: 224599142331208838, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
@@ -10482,17 +10528,17 @@ Prefab:
     - target: {fileID: 224599142331208838, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224599142331208838, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 281
+      value: -209
       objectReference: {fileID: 0}
     - target: {fileID: 224599142331208838, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -541.97485
+      value: 368.02515
       objectReference: {fileID: 0}
     - target: {fileID: 224599142331208838, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}

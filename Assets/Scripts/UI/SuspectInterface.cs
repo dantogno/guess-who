@@ -8,37 +8,38 @@ public class SuspectInterface : MonoBehaviour
     [SerializeField]
     private Image selectedSuspectPortraitImage, selectedSuspectPortraitHighlightImage;
 
-    private static SuspectInterface instance;
+    [SerializeField]
+    private Text selectedSuspectNameText, selectedSuspectAgeText, selectedSuspectOccupationText, mainText, mainTextLabel;
+
     private int goToSuspectSelectedAnimTrigger = Animator.StringToHash(nameof(goToSuspectSelectedAnimTrigger));
     private int goToCaseFileSelectedAnimTrigger = Animator.StringToHash(nameof(goToCaseFileSelectedAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
+    private const string bioLabelText = "BIO";
     private Animator animator;
+
+    public static SuspectInterface Instance { get; private set; }
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
         animator = GetComponent<Animator>();
-    }
-
-    public static SuspectInterface Instance
-    {
-        get
-        {
-            //if (instance == null)
-            //{
-            //    var gameObject = GameObject.Find(nameof(SuspectInterface));
-            //    instance = gameObject.AddComponent<SuspectInterface>();
-            //    instance.Initialize();
-            //}
-            return instance;
-        }
     }
 
     public void GoToSuspectSelectedState(Character selectedCharacter)
     {
+        SetSelectedCharacterInfo(selectedCharacter);
+        animator.SetTrigger(goToSuspectSelectedAnimTrigger);
+    }
+
+    private void SetSelectedCharacterInfo(Character selectedCharacter)
+    {
         selectedSuspectPortraitImage.sprite = selectedCharacter.PortraitSprite;
         selectedSuspectPortraitHighlightImage.sprite = selectedCharacter.PortraitHighlightSprite;
-        animator.SetTrigger(goToSuspectSelectedAnimTrigger);
+        selectedSuspectNameText.text = selectedCharacter.CharacterName;
+        selectedSuspectAgeText.text = selectedCharacter.Age;
+        selectedSuspectOccupationText.text = selectedCharacter.Occupation;
+        mainTextLabel.text = bioLabelText;
+        mainText.text = selectedCharacter.Bio;
     }
 
     public void GoToCaseFileSelectedState()

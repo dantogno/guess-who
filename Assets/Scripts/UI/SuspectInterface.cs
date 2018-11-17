@@ -6,6 +6,7 @@ public class SuspectInterface : MonoBehaviour
 {
     private static SuspectInterface instance;
     private int goToSuspectSelectedAnimTrigger = Animator.StringToHash(nameof(goToSuspectSelectedAnimTrigger));
+    private int goToCaseFileSelectedAnimTrigger = Animator.StringToHash(nameof(goToCaseFileSelectedAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
     private Animator animator;
 
@@ -26,6 +27,11 @@ public class SuspectInterface : MonoBehaviour
     public void GoToSuspectSelectedState()
     {
         animator.SetTrigger(goToSuspectSelectedAnimTrigger);
+    }
+
+    public void GoToCaseFileSelectedState()
+    {
+        animator.SetTrigger(goToCaseFileSelectedAnimTrigger);
     }
 
     public void GoBack()

@@ -3,8 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Last names.
+/// </summary>
+public enum CharacterID
+{
+    Rocheford,
+    Miko,
+    Chenkova,
+    Ducote,
+    Oni,
+    Sonoda
+}
+
 public class Character : MonoBehaviour
 {
+    [SerializeField]
+    private CharacterID characterID;
+
     [SerializeField]
     private string characterName = "Schmoe";
 
@@ -15,7 +31,7 @@ public class Character : MonoBehaviour
     private string occupation = "Jobber";
 
     [SerializeField]
-    [Multiline(5)]
+    [TextArea(3, 5)]
     private string bio = "My life story.";
 
     [SerializeField]
@@ -35,7 +51,7 @@ public class Character : MonoBehaviour
     public string Age => age;
     public string Occupation => occupation;
     public string Bio => bio;
-
+    public CharacterID CharacterID => characterID;
     public void ClickedCharacter()
     {
         SuspectInterface.Instance.GoToSuspectSelectedState(this);

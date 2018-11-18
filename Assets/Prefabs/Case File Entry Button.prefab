@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222445809839169508}
   - component: {fileID: 114323531324479344}
   - component: {fileID: 114172803850632498}
+  - component: {fileID: 114217684468175378}
   m_Layer: 5
   m_Name: Case File Entry Button
   m_TagString: Untagged
@@ -70,6 +71,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114217684468175378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106352461223498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c758dbdd47e73149bcabae936f83b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newIcon: {fileID: 0}
 --- !u!114 &114323531324479344
 MonoBehaviour:
   m_ObjectHideFlags: 1

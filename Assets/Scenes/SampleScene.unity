@@ -492,7 +492,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 108064630}
-  m_Mesh: {fileID: 635161539}
+  m_Mesh: {fileID: 1118418493}
 --- !u!23 &108064632
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 1032566104}
+  - {fileID: 434403684}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -638,12 +638,12 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -663,7 +663,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -673,7 +673,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -713,6 +713,10 @@ Prefab:
     - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
       propertyPath: m_Name
       value: Case File Entry Button (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
@@ -1501,12 +1505,12 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -1526,7 +1530,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -1536,7 +1540,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -1576,6 +1580,10 @@ Prefab:
     - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
       propertyPath: m_Name
       value: Case File Entry Button (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
@@ -1655,8 +1663,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 97899418}
   m_HandleRect: {fileID: 97899417}
   m_Direction: 2
-  m_Value: 0.9999997
-  m_Size: 0.75826085
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2839,6 +2847,33 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 419027081}
   m_CullTransparentMesh: 0
+--- !u!21 &434403684
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 'sceneANov2018-10inchMaterial
+
+    13684'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5a33302a6ca84474bb423b83d7c9967b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!224 &495915722 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224599142331208838, guid: 5c4121c37bc56834cbcfbee1be36be2b,
@@ -3150,12 +3185,12 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -3175,7 +3210,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -3185,7 +3220,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -3226,6 +3261,10 @@ Prefab:
       propertyPath: m_Name
       value: Case File Entry Button (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
   m_IsPrefabAsset: 0
@@ -3236,11 +3275,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 632938612}
     m_Modifications:
-    - target: {fileID: 114172803850632498, guid: 204abfc2727b2694c9c57611cb687da8,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -3284,7 +3318,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -3309,7 +3343,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -3319,7 +3353,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -3331,30 +3365,9 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114172803850632498, guid: 204abfc2727b2694c9c57611cb687da8,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114172803850632498, guid: 204abfc2727b2694c9c57611cb687da8,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114172803850632498, guid: 204abfc2727b2694c9c57611cb687da8,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1268998713}
-    - target: {fileID: 114172803850632498, guid: 204abfc2727b2694c9c57611cb687da8,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CaseFileEntryButtonPressed
-      objectReference: {fileID: 0}
-    - target: {fileID: 114172803850632498, guid: 204abfc2727b2694c9c57611cb687da8,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
@@ -3460,7 +3473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00002691108}
+  m_AnchoredPosition: {x: 0, y: 0.0000147062465}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &632938613
@@ -3498,161 +3511,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!43 &635161539
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ImageTargetMesh45260
-  serializedVersion: 9
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.375}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 2
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf000000000000c0be000000000000803f000000000000000000000000000000bf000000000000c03e000000000000803f00000000000000000000803f0000003f000000000000c0be000000000000803f000000000000803f000000000000003f000000000000c03e000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0, z: 0.375}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimized: 0
 --- !u!1 &678058521 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8,
@@ -3674,6 +3532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c758dbdd47e73149bcabae936f83b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newIcon: {fileID: 0}
 --- !u!1 &692923779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3961,9 +3820,57 @@ Prefab:
       propertyPath: occupation
       value: VR Machinist for Atomic Dyno Systems
       objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterID
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &751598282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751598283}
+  - component: {fileID: 751598284}
+  m_Layer: 0
+  m_Name: Rocheford1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &751598283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751598282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1315968882}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &751598284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751598282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 056b531e12b3ea54a9c6c3f7fdca37b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  associatedCharacter: 0
+  fileNumber: 1
+  fileText: Testing test test
 --- !u!1 &768515692 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8,
@@ -3985,6 +3892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c758dbdd47e73149bcabae936f83b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newIcon: {fileID: 0}
 --- !u!1 &771401378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,33 +4851,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f942a5b1385a40b40bf6f32660dc0cfd, type: 3}
   m_IsPrefabAsset: 0
---- !u!21 &1032566104
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 'sceneANov2018-10inchMaterial
-
-    45270'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5a33302a6ca84474bb423b83d7c9967b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1035391125
 GameObject:
   m_ObjectHideFlags: 0
@@ -5250,6 +5131,11 @@ Prefab:
         VR lounges from Cabeus city. Sonoda believes that these lounges are covers
         for illicit activities and illegal trade. He has been conducting \u201Cresearch\u201D
         on each establishment to bolster his anti-VR campaign"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterID
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
@@ -5699,6 +5585,161 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1116965013}
   m_CullTransparentMesh: 0
+--- !u!43 &1118418493
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ImageTargetMesh13674
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0, z: 0.375}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf000000000000c0be000000000000803f000000000000000000000000000000bf000000000000c03e000000000000803f00000000000000000000803f0000003f000000000000c0be000000000000803f000000000000803f000000000000003f000000000000c03e000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0, z: 0.375}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
 --- !u!1 &1120499312
 GameObject:
   m_ObjectHideFlags: 0
@@ -5965,6 +6006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c758dbdd47e73149bcabae936f83b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newIcon: {fileID: 0}
 --- !u!1 &1186070555
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,6 +6461,11 @@ Prefab:
         that Maehi has been using banned supplements to improve her stats. She is
         always seen carrying her signature Blaze Bat. She was last seen yesterday
         arguing with an individual at the VR lounge. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterID
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
@@ -7149,27 +7196,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1268998711 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8,
-    type: 2}
-  m_PrefabInternal: {fileID: 624928553}
 --- !u!224 &1268998712 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
     type: 2}
   m_PrefabInternal: {fileID: 624928553}
---- !u!114 &1268998713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268998711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c758dbdd47e73149bcabae936f83b24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1307293179
 GameObject:
   m_ObjectHideFlags: 0
@@ -7279,6 +7310,9 @@ MonoBehaviour:
   selectedSuspectOccupationText: {fileID: 283027714}
   mainText: {fileID: 1843032060}
   mainTextLabel: {fileID: 1913126785}
+  caseFileButtonPrefab: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8,
+    type: 2}
+  caseFileButtonParent: {fileID: 632938612}
 --- !u!1 &1308108985
 GameObject:
   m_ObjectHideFlags: 0
@@ -7303,17 +7337,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1308108985}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2088001238}
-  m_Father: {fileID: 1514222126}
-  m_RootOrder: 1
+  m_Father: {fileID: 1886491231}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15.280029}
+  m_AnchoredPosition: {x: 17, y: -15.279999}
   m_SizeDelta: {x: 20, y: -32.28}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1308108987
@@ -7355,7 +7389,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1845029978}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.34342957
+  m_Size: 0.34557134
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7396,6 +7430,35 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1308108985}
   m_CullTransparentMesh: 0
+--- !u!1 &1315968881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315968882}
+  m_Layer: 0
+  m_Name: CaseFiles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1315968882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315968881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 698.3934, y: 866.32117, z: -15.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 751598283}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1331229734
 Prefab:
   m_ObjectHideFlags: 0
@@ -7451,12 +7514,12 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -7476,7 +7539,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -7486,7 +7549,7 @@ Prefab:
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224161115301299202, guid: 204abfc2727b2694c9c57611cb687da8,
         type: 2}
@@ -7526,6 +7589,10 @@ Prefab:
     - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
       propertyPath: m_Name
       value: Case File Entry Button (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204abfc2727b2694c9c57611cb687da8, type: 2}
@@ -7834,6 +7901,11 @@ Prefab:
       value: Crystal is a unique hacker called a VR Jockey. She infiltrates VR lounges
         and hacks into clientals devices to steal financial records or collect sensitive
         information to sell on the black market.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterID
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
@@ -8169,7 +8241,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1886491231}
-  - {fileID: 1308108986}
   m_Father: {fileID: 1229801338}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9221,11 +9292,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1886491231}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 410.7, y: 288.19226}
+  m_AnchoredPosition: {x: 410.7, y: 288.89807}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1843032059
@@ -9430,6 +9501,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1308108986}
   - {fileID: 1843032058}
   m_Father: {fileID: 1514222126}
   m_RootOrder: 0
@@ -9595,6 +9667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c758dbdd47e73149bcabae936f83b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newIcon: {fileID: 0}
 --- !u!1 &1891810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -9633,7 +9706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517162}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1891810071
@@ -10847,6 +10920,11 @@ Prefab:
         Sun\u201D. The notorious gang specializes in smuggling black market technologies
         and substances. Also known as the \u201CWhite Bear\u201D, Chenkova is ruthless
         in his attempts to collect unpaid debts. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterID
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}

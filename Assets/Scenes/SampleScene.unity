@@ -241,7 +241,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 37828855}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -492,7 +492,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 108064630}
-  m_Mesh: {fileID: 1698427759}
+  m_Mesh: {fileID: 635161539}
 --- !u!23 &108064632
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 1657781480}
+  - {fileID: 1032566104}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2641,6 +2641,22 @@ Prefab:
       propertyPath: m_Name
       value: Character Panel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: bio
+      value: Established the first lunar VR lounges, with exclusive patents remaining
+        for the next 78 years.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterName
+      value: Malcolm Rocheford
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: age
+      value: 34
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
@@ -3393,6 +3409,161 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!43 &635161539
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ImageTargetMesh45260
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0, z: 0.375}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf000000000000c0be000000000000803f000000000000000000000000000000bf000000000000c03e000000000000803f00000000000000000000803f0000003f000000000000c0be000000000000803f000000000000803f000000000000003f000000000000c03e000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0, z: 0.375}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
 --- !u!1 &678058521 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1106352461223498, guid: 204abfc2727b2694c9c57611cb687da8,
@@ -3679,6 +3850,28 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterName
+      value: Zen Oni
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: age
+      value: N/A
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: bio
+      value: "Zen Oni is a commercial android that maintains and updates VR lounges
+        owned by ADS. Zen has several synthetic implants that allow it to perform
+        delicate operations on ADS\u2019s highly advanced VR technologies. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: occupation
+      value: VR Machinist for Atomic Dyno Systems
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
@@ -3797,33 +3990,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!21 &782750925
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 'scaledCrimeScene63percentMaterial
-
-    13420'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fc9a3cae0e794174a50902968aa2d97c, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &792234121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4527,7 +4693,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 782750925}
+  - {fileID: 1210271749}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4688,6 +4854,33 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f942a5b1385a40b40bf6f32660dc0cfd, type: 3}
   m_IsPrefabAsset: 0
+--- !u!21 &1032566104
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 'sceneANov2018-10inchMaterial
+
+    45270'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5a33302a6ca84474bb423b83d7c9967b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1035391125
 GameObject:
   m_ObjectHideFlags: 0
@@ -4946,6 +5139,29 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 90d6b19879392f1418cd135a8c043967,
         type: 3}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterName
+      value: Lucius Sonoda
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: age
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: occupation
+      value: Cabeus District Alderman
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: bio
+      value: "Alderman Sonoda is a credible government official who is trying to ban
+        VR lounges from Cabeus city. Sonoda believes that these lounges are covers
+        for illicit activities and illegal trade. He has been conducting \u201Cresearch\u201D
+        on each establishment to bolster his anti-VR campaign"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
@@ -5875,7 +6091,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205862529}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -6002,6 +6218,30 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: a79e8f1819b33684a99b6212b7fef14f,
         type: 3}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterName
+      value: Maehi Miko
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: age
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: occupation
+      value: 'Pro Blaze Ball Player for the Cryo Techs '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: bio
+      value: 'A rising star in the Lunar League. Maehi hopes to become the first organic
+        to score over 10,000 blitz in a single season. Recent rumours have suggested
+        that Maehi has been using banned supplements to improve her stats. She is
+        always seen carrying her signature Blaze Bat. She was last seen yesterday
+        arguing with an individual at the VR lounge. '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
@@ -6091,6 +6331,33 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207689665}
   m_CullTransparentMesh: 0
+--- !u!21 &1210271749
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 'scaledCrimeScene63percentMaterial
+
+    45732'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: fc9a3cae0e794174a50902968aa2d97c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1210460187
 GameObject:
   m_ObjectHideFlags: 0
@@ -6908,7 +7175,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1845029978}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.56271356
+  m_Size: 0.5629784
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7366,6 +7633,28 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d652871e2df12684ba37487e1dbdd993,
         type: 3}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterName
+      value: Crystal Ducote
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: age
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: occupation
+      value: VR Jockey
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: bio
+      value: Crystal is a unique hacker called a VR Jockey. She infiltrates VR lounges
+        and hacks into clientals devices to steal financial records or collect sensitive
+        information to sell on the black market.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
@@ -7892,7 +8181,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13584
+  m_Name: pb_Mesh46134
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -8042,33 +8331,6 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
---- !u!21 &1657781480
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 'sceneANov2018-10inchMaterial
-
-    -125618'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5a33302a6ca84474bb423b83d7c9967b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1683651283
 GameObject:
   m_ObjectHideFlags: 0
@@ -8588,161 +8850,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: f942a5b1385a40b40bf6f32660dc0cfd,
     type: 3}
   m_PrefabInternal: {fileID: 1685865542}
---- !u!43 &1698427759
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ImageTargetMesh-125614
-  serializedVersion: 9
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.375}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 2
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf000000000000c0be000000000000803f000000000000000000000000000000bf000000000000c03e000000000000803f00000000000000000000803f0000003f000000000000c0be000000000000803f000000000000803f000000000000003f000000000000c03e000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0, z: 0.375}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimized: 0
 --- !u!1 &1717468823
 GameObject:
   m_ObjectHideFlags: 0
@@ -8917,7 +9024,7 @@ GameObject:
   - component: {fileID: 1843032060}
   - component: {fileID: 1843032059}
   m_Layer: 5
-  m_Name: Main text
+  m_Name: FolderBox text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8938,7 +9045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 410.7, y: 320.89807}
+  m_AnchoredPosition: {x: 410.7, y: 320.89804}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1843032059
@@ -9972,7 +10079,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh13446
+  m_Name: pb_Mesh45778
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10538,6 +10645,29 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 4a06ffccbc0015e4eb4887465c745cca,
         type: 3}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: characterName
+      value: Vleoni Chenkova
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: age
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: occupation
+      value: Black Market Tech Dealer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: bio
+      value: "\rChenkova belongs to a black dealer organization called the \u201CThird
+        Sun\u201D. The notorious gang specializes in smuggling black market technologies
+        and substances. Also known as the \u201CWhite Bear\u201D, Chenkova is ruthless
+        in his attempts to collect unpaid debts. \r\n"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0

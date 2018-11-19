@@ -26,7 +26,7 @@ public class SuspectInterface : MonoBehaviour
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
     private const string bioLabelText = "BIO";
     private Animator animator;
-    private List<GameObject> caseFileButtons = new List<GameObject>();
+    private List<CaseFileEntryButton> caseFileButtons = new List<CaseFileEntryButton>();
 
     public static SuspectInterface Instance { get; private set; }
 
@@ -55,24 +55,33 @@ public class SuspectInterface : MonoBehaviour
 
     private void GenerateCaseFileButtons(Character selectedCharacter)
     {
-        var caseFiles = CaseFile.AllCaseFiles.Where(caseFile => caseFile.AssociatedCharacter == selectedCharacter.CharacterID).ToList();
+        // TODO: use object pool
+        var caseFiles = 
+            CaseFile.AllCaseFiles.Where(caseFile => caseFile.AssociatedCharacter == selectedCharacter.CharacterID).ToList();
         for (int i = 0; i < caseFiles.Count(); i++)
         {
             var button = Instantiate(caseFileButtonPrefab, caseFileButtonParent).GetComponent<CaseFileEntryButton>();
             button.SetCaseFile(caseFiles[i]);
-            caseFileButtons.Add(button.gameObject);
+            caseFileButtons.Add(button);
+        }
+    }
+
+    public void UpdateCaseFileIsNewIcons()
+    {
+        foreach (var item in caseFileButtons)
+        {
+            item.UpdateNewIconDisplay();
         }
     }
 
     public void DestroyAllCaseFileButtons()
     {
-        // TODO: I need to call this whenever I go back to the suspect list. Does that mean I need a state machine behaviour for that state?
-        // Because I'm just calling back in here.
-        // Maybe I could check the state of the animator and destroy the buttons when they hit back if their in a certain state?
+        // TODO: object pool
         foreach (var item in caseFileButtons)
         {
-            Destroy(item);
+            Destroy(item.gameObject);
         }
+        caseFileButtons.Clear();
     }
 
     private void SetSelectedCharacterInfo(Character selectedCharacter)

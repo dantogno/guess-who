@@ -6,6 +6,10 @@ public class SuspectSelectedBehaviour : StateMachineBehaviour
 {
     public SuspectInterface SuspectInterface {get; set;}
 
+    public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
+    {
+        this.SuspectInterface.UpdateCaseFileIsNewIcons();
+    }
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
     //

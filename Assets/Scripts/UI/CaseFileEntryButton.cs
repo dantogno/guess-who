@@ -15,7 +15,14 @@ public class CaseFileEntryButton : MonoBehaviour
     public void SetCaseFile(CaseFile caseFile)
     {
         this.caseFile = caseFile;
+        UpdateNewIconDisplay();
     }
+
+    public void UpdateNewIconDisplay()
+    {
+        newIcon.SetActive(caseFile.IsNew);
+    }
+
     private void Awake()
     {
         button = GetComponent<Button>();

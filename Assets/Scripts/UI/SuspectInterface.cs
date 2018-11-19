@@ -20,6 +20,7 @@ public class SuspectInterface : MonoBehaviour
     private Transform caseFileButtonParent;
 
     private SuspectSelectedBehaviour suspectSelectedBehaviour;
+    private SuspectListBehaviour suspectListBehaviour;
     private int goToSuspectSelectedAnimTrigger = Animator.StringToHash(nameof(goToSuspectSelectedAnimTrigger));
     private int goToCaseFileSelectedAnimTrigger = Animator.StringToHash(nameof(goToCaseFileSelectedAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
@@ -47,6 +48,9 @@ public class SuspectInterface : MonoBehaviour
     {
         suspectSelectedBehaviour = animator.GetBehaviour<SuspectSelectedBehaviour>();
         suspectSelectedBehaviour.SuspectInterface = this;
+
+        suspectListBehaviour = animator.GetBehaviour<SuspectListBehaviour>();
+        suspectListBehaviour.SuspectInterface = this;
     }
 
     private void GenerateCaseFileButtons(Character selectedCharacter)

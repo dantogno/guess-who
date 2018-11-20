@@ -23,6 +23,7 @@ public class SuspectInterface : MonoBehaviour
     private SuspectListBehaviour suspectListBehaviour;
     private int goToSuspectSelectedAnimTrigger = Animator.StringToHash(nameof(goToSuspectSelectedAnimTrigger));
     private int goToCaseFileSelectedAnimTrigger = Animator.StringToHash(nameof(goToCaseFileSelectedAnimTrigger));
+    private int goToChargeSuspectAnimTrigger = Animator.StringToHash(nameof(goToChargeSuspectAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
     private const string bioLabelText = "BIO";
     private Animator animator;
@@ -42,6 +43,11 @@ public class SuspectInterface : MonoBehaviour
         GenerateCaseFileButtons(selectedCharacter);
         SetSelectedCharacterInfo(selectedCharacter);
         animator.SetTrigger(goToSuspectSelectedAnimTrigger);
+    }
+
+    public void GoToChargeSuspectState()
+    {
+        animator.SetTrigger(goToChargeSuspectAnimTrigger);
     }
 
     private void InitializeStateMachineBehaviours()

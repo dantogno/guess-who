@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -38,7 +39,7 @@ public class Character : MonoBehaviour
     private List<string> attributeList;
 
     [SerializeField]
-    private GameObject highlight;
+    private GameObject highlight, newCaseFilesIcon;
 
     [SerializeField]
     private Image portraitImage, portraitHighlightImage;
@@ -55,5 +56,36 @@ public class Character : MonoBehaviour
     public void ClickedCharacter()
     {
         SuspectInterface.Instance.GoToSuspectSelectedState(this);
+    }
+
+    private void ConditionallyShowNewCaseFileIcon()
+    {
+        var newCaseFilesExist = CaseFile.AllCaseFiles.Exists(casefile => casefile.IsUnlocked &&
+        casefile.AssociatedCharacter == characterID && casefile.IsNew);
+        newCaseFilesIcon.SetActive(newCaseFilesExist);
+    }
+
+    private void HideNewCaseFileIcon()
+    {
+        newCaseFilesIcon.SetActive(false);
+    }
+
+    private void OnSuspectListEntered()
+    {
+        ConditionallyShowNewCaseFileIcon();
+    }
+    private void OnExitedSuspectList()
+    {
+        HideNewCaseFileIcon();
+    }
+    private void OnEnable()
+    {
+        SuspectListBehaviour.EnteredState += OnSuspectListEntered;
+        SuspectListBehaviour.ExitedState += OnExitedSuspectList;
+    }
+    private void OnDisable()
+    {
+        SuspectListBehaviour.EnteredState -= OnSuspectListEntered;
+        SuspectListBehaviour.ExitedState -= OnExitedSuspectList;
     }
 }

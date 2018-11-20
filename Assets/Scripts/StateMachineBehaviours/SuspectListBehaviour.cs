@@ -1,13 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SuspectListBehaviour : StateMachineBehaviour
 {
+    public static event Action EnteredState;
+    public static event Action ExitedState;
     public SuspectInterface SuspectInterface { get; set; }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {
-        this.SuspectInterface.DestroyAllCaseFileButtons();
+        EnteredState?.Invoke();
+        this.SuspectInterface.DestroyAllCaseFileButtons();        
+    }
+    public override void OnStateExit(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
+    {
+        ExitedState?.Invoke();
     }
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

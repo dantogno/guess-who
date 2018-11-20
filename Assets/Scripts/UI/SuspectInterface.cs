@@ -57,7 +57,8 @@ public class SuspectInterface : MonoBehaviour
     {
         // TODO: use object pool
         var caseFiles = 
-            CaseFile.AllCaseFiles.Where(caseFile => caseFile.AssociatedCharacter == selectedCharacter.CharacterID).ToList();
+            CaseFile.AllCaseFiles.Where(caseFile => caseFile.AssociatedCharacter == selectedCharacter.CharacterID &&
+            caseFile.IsUnlocked).ToList();
         for (int i = 0; i < caseFiles.Count(); i++)
         {
             var button = Instantiate(caseFileButtonPrefab, caseFileButtonParent).GetComponent<CaseFileEntryButton>();

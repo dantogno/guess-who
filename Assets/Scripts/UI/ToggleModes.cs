@@ -8,7 +8,7 @@ public class ToggleModes : MonoBehaviour
     private GameObject arCamera;
 
     [SerializeField]
-    private CanvasGroup suspectInterfaceCanvasGroup, toggleModesCanvasGroup;
+    private CanvasGroup suspectInterfaceCanvasGroup, toggleModesCanvasGroup, scanningCanvasGroup;
 
     private void OnEnteredChargeSuspectState()
     {
@@ -42,5 +42,6 @@ public class ToggleModes : MonoBehaviour
         suspectInterfaceCanvasGroup.blocksRaycasts = isOn;
         suspectInterfaceCanvasGroup.interactable = isOn;
         arCamera.SetActive(!isOn);
+        scanningCanvasGroup.alpha = isOn ? 0 : 1;
     }
 }

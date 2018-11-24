@@ -12,22 +12,6 @@ public class SearchAndHighlight : MonoBehaviour
     [SerializeField]
     private List<Character> allCharacters;
 
-    private void Start()
-    {
-        //string testString = "foxes";
-        //string testsubstring = "fox";
-        //Debug.Log(testString.Contains(testsubstring));
-        // output: true
-    }
-
-    public void SubmitButtonClicked()
-    {
-        //HighlightCharacters(
-        //   GetMatchingCharacters(inputField.text));
-
-        //GetMatchingCharacters( GetSearchKeywords(inputField.text));
-    }
-
     public void EndedEditingInputText(string input)
     {             
         RemoveAllHighlights();

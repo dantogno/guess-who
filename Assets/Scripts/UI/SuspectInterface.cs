@@ -24,6 +24,7 @@ public class SuspectInterface : MonoBehaviour
     private int goToSuspectSelectedAnimTrigger = Animator.StringToHash(nameof(goToSuspectSelectedAnimTrigger));
     private int goToCaseFileSelectedAnimTrigger = Animator.StringToHash(nameof(goToCaseFileSelectedAnimTrigger));
     private int goToChargeSuspectAnimTrigger = Animator.StringToHash(nameof(goToChargeSuspectAnimTrigger));
+    private int goToSuspectListAnimTrigger = Animator.StringToHash(nameof(goToSuspectListAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
     private const string bioLabelText = "BIO";
     private Animator animator;
@@ -45,6 +46,11 @@ public class SuspectInterface : MonoBehaviour
         animator.SetTrigger(goToSuspectSelectedAnimTrigger);
     }
 
+    public void GoToSuspectListState()
+    {
+        animator.SetTrigger(goToSuspectListAnimTrigger);
+    }
+
     public void GoToChargeSuspectState()
     {
         animator.SetTrigger(goToChargeSuspectAnimTrigger);
@@ -64,7 +70,7 @@ public class SuspectInterface : MonoBehaviour
         // TODO: use object pool
         var caseFiles = 
             CaseFile.AllCaseFiles.Where(caseFile => caseFile.AssociatedCharacter == selectedCharacter.CharacterID &&
-            caseFile.IsUnlocked).ToList();
+            !caseFile.IsLocked).ToList();
         for (int i = 0; i < caseFiles.Count(); i++)
         {
             var button = Instantiate(caseFileButtonPrefab, caseFileButtonParent).GetComponent<CaseFileEntryButton>();

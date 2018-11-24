@@ -13,7 +13,7 @@ public class CaseFile : MonoBehaviour
     private int fileNumber;
 
     [SerializeField]
-    private bool isUnlocked;
+    private bool isLocked;
 
     [SerializeField]
     [TextArea(3,10)]
@@ -25,16 +25,16 @@ public class CaseFile : MonoBehaviour
 
     public CharacterID AssociatedCharacter => associatedCharacter;
 
-    public bool IsUnlocked
+    public bool IsLocked
     {
         get
         {
-            return isUnlocked;
+            return isLocked;
         }
 
         set
         {
-            isUnlocked = value;
+            isLocked = value;
         }
     }
 

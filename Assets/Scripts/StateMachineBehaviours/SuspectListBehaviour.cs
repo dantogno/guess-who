@@ -11,6 +11,7 @@ public class SuspectListBehaviour : StateMachineBehaviour
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {
         EnteredState?.Invoke();
+        this.SuspectInterface.UpdateCaseFileIsNewIcons();
         this.SuspectInterface.DestroyAllCaseFileButtons();        
     }
     public override void OnStateExit(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)

@@ -43,5 +43,7 @@ public class ToggleModes : MonoBehaviour
         suspectInterfaceCanvasGroup.interactable = isOn;
         arCamera.SetActive(!isOn);
         scanningCanvasGroup.alpha = isOn ? 0 : 1;
+        if (isOn)
+         SuspectInterface.Instance.GoToSuspectListState();
     }
 }

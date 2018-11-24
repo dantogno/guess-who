@@ -60,7 +60,7 @@ public class Character : MonoBehaviour
 
     private void ConditionallyShowNewCaseFileIcon()
     {
-        var newCaseFilesExist = CaseFile.AllCaseFiles.Exists(casefile => casefile.IsUnlocked &&
+        var newCaseFilesExist = CaseFile.AllCaseFiles.Exists(casefile => !casefile.IsLocked &&
         casefile.AssociatedCharacter == characterID && casefile.IsNew);
         newCaseFilesIcon.SetActive(newCaseFilesExist);
     }

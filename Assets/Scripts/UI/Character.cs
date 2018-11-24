@@ -76,16 +76,16 @@ public class Character : MonoBehaviour
     }
     private void OnExitedSuspectList()
     {
-        HideNewCaseFileIcon();
+        //HideNewCaseFileIcon();
     }
     private void OnEnable()
     {
         SuspectListBehaviour.EnteredState += OnSuspectListEntered;
-        SuspectListBehaviour.ExitedState += OnExitedSuspectList;
+        //SuspectListBehaviour.ExitedState += OnExitedSuspectList;
     }
     private void OnDisable()
     {
         SuspectListBehaviour.EnteredState -= OnSuspectListEntered;
-        SuspectListBehaviour.ExitedState -= OnExitedSuspectList;
+        //SuspectListBehaviour.ExitedState -= OnExitedSuspectList;
     }
 }

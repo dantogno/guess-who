@@ -7,11 +7,10 @@ public class SuspectListBehaviour : StateMachineBehaviour
 {
     public static event Action EnteredState;
     public static event Action ExitedState;
-    public SuspectInterface SuspectInterface { get; set; }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {
         EnteredState?.Invoke();
-        this.SuspectInterface.DestroyAllCaseFileButtons();        
+        SuspectInterface.Instance.DestroyAllCaseFileButtons();        
     }
     public override void OnStateExit(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {

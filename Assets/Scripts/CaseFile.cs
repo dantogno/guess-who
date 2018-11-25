@@ -19,7 +19,8 @@ public class CaseFile : MonoBehaviour
     [TextArea(3,10)]
     private string fileText;
 
-    public string DisplayName => $"{nameof(associatedCharacter)} - File #{fileNumber}";
+    public string DisplayName => $"{associatedCharacter.ToString()} - File #{fileNumber}";
+    public string FileText => fileText;
 
     public bool IsNew { get; set; } = true;
 

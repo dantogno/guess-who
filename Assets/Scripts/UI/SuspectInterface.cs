@@ -11,7 +11,8 @@ public class SuspectInterface : MonoBehaviour
     private Image selectedSuspectPortraitImage, selectedSuspectPortraitHighlightImage;
 
     [SerializeField]
-    private Text selectedSuspectNameText, selectedSuspectAgeText, selectedSuspectOccupationText, mainText, mainTextLabel;
+    private Text selectedSuspectNameText, selectedSuspectAgeText, selectedSuspectOccupationText, mainText, mainTextLabel,
+        caseFileSelectedHeading;
 
     [SerializeField]
     private GameObject caseFileButtonPrefab;
@@ -21,12 +22,12 @@ public class SuspectInterface : MonoBehaviour
 
     private SuspectSelectedBehaviour suspectSelectedBehaviour;
     private SuspectListBehaviour suspectListBehaviour;
+    private CaseFileSelectedBehaviour caseFileSelectedBehaviour;
     private int goToSuspectSelectedAnimTrigger = Animator.StringToHash(nameof(goToSuspectSelectedAnimTrigger));
     private int goToCaseFileSelectedAnimTrigger = Animator.StringToHash(nameof(goToCaseFileSelectedAnimTrigger));
     private int goToChargeSuspectAnimTrigger = Animator.StringToHash(nameof(goToChargeSuspectAnimTrigger));
     private int goToSuspectListAnimTrigger = Animator.StringToHash(nameof(goToSuspectListAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
-    private const string bioLabelText = "BIO";
     private Animator animator;
     private List<CaseFileEntryButton> caseFileButtons = new List<CaseFileEntryButton>();
 
@@ -42,7 +43,7 @@ public class SuspectInterface : MonoBehaviour
     public void GoToSuspectSelectedState(Character selectedCharacter)
     {
         GenerateCaseFileButtons(selectedCharacter);
-        SetSelectedCharacterInfo(selectedCharacter);
+        suspectSelectedBehaviour.SelectedCharacter = selectedCharacter;
         animator.SetTrigger(goToSuspectSelectedAnimTrigger);
     }
 
@@ -59,15 +60,17 @@ public class SuspectInterface : MonoBehaviour
     private void InitializeStateMachineBehaviours()
     {
         suspectSelectedBehaviour = animator.GetBehaviour<SuspectSelectedBehaviour>();
-        suspectSelectedBehaviour.SuspectInterface = this;
-
+        suspectSelectedBehaviour.Initialize(selectedSuspectPortraitImage, selectedSuspectPortraitHighlightImage,
+            selectedSuspectNameText, selectedSuspectAgeText, selectedSuspectOccupationText, mainTextLabel, mainText);
         suspectListBehaviour = animator.GetBehaviour<SuspectListBehaviour>();
-        suspectListBehaviour.SuspectInterface = this;
+        caseFileSelectedBehaviour = animator.GetBehaviour<CaseFileSelectedBehaviour>();
+        caseFileSelectedBehaviour.Initialize(caseFileSelectedHeading, mainText);
     }
 
     private void GenerateCaseFileButtons(Character selectedCharacter)
     {
         // TODO: use object pool
+        // Consider moving to SuspectSelectedBehaviour
         var caseFiles = 
             CaseFile.AllCaseFiles.Where(caseFile => caseFile.AssociatedCharacter == selectedCharacter.CharacterID &&
             !caseFile.IsLocked).ToList();
@@ -81,6 +84,7 @@ public class SuspectInterface : MonoBehaviour
 
     public void UpdateCaseFileIsNewIcons()
     {
+        // Consider moving to SuspectSelectedBehaviour
         foreach (var item in caseFileButtons)
         {
             item.UpdateNewIconDisplay();
@@ -97,20 +101,9 @@ public class SuspectInterface : MonoBehaviour
         caseFileButtons.Clear();
     }
 
-    private void SetSelectedCharacterInfo(Character selectedCharacter)
-    {
-        selectedSuspectPortraitImage.sprite = selectedCharacter.PortraitSprite;
-        selectedSuspectPortraitHighlightImage.sprite = selectedCharacter.PortraitHighlightSprite;
-        selectedSuspectNameText.text = selectedCharacter.CharacterName;
-        selectedSuspectAgeText.text = selectedCharacter.Age;
-        selectedSuspectOccupationText.text = selectedCharacter.Occupation;
-        mainTextLabel.text = bioLabelText;
-        mainText.text = selectedCharacter.Bio;
-    }
-
     public void GoToCaseFileSelectedState(CaseFile selectedCaseFile)
     {
-        // TODO: setup heading / text for selected case file
+        caseFileSelectedBehaviour.UpdateCaseFileText(selectedCaseFile);
         animator.SetTrigger(goToCaseFileSelectedAnimTrigger);
     }
 

@@ -7,9 +7,19 @@ public class CrimeSceneTrackableEventHandler : DefaultTrackableEventHandler
     [SerializeField]
     private GameObject trackingIndicator;
 
+    [SerializeField]
+    private GameObject notTrackingDialog;
+
+    private void Awake()
+    {
+        notTrackingDialog.SetActive(false);
+        trackingIndicator.SetActive(false);
+    }
+
     protected override void OnTrackingFound()
     {
         trackingIndicator.SetActive(true);
+        notTrackingDialog.SetActive(false);
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
@@ -33,6 +43,7 @@ public class CrimeSceneTrackableEventHandler : DefaultTrackableEventHandler
     protected override void OnTrackingLost()
     {
         base.OnTrackingLost();
+        notTrackingDialog.SetActive(true);
         trackingIndicator.SetActive(false);
     }
 

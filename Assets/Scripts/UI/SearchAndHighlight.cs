@@ -28,21 +28,20 @@ public class SearchAndHighlight : MonoBehaviour
 
         foreach (var character in allCharacters)
         {
-            foreach (var entry in character.AttributesList)
+            foreach (var caseFile in CaseFile.AllCaseFiles
+                .Where(casefile => casefile.AssociatedCharacter == character.CharacterID && !casefile.IsLocked))
             {
-                var entryWords = entry.ToLower().Split(' ');
+                var words = caseFile.FileText.ToLower().Split(' ');
 
-                foreach (var word in entryWords)
+                foreach (var word in words)
                 {
                     if (keywords.Contains(word))
                     {
-                        Debug.Log(word);
                         matchingCharacters.Add(character);
                     }
                 }
             }
-        }
-        
+        }        
         return matchingCharacters;
     }
 

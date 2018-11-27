@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newIcon: {fileID: 1883867628076440}
+  displayNameText: {fileID: 114323531324479344}
 --- !u!114 &114323531324479344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,7 +249,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 322, y: 60}
+  m_SizeDelta: {x: 775, y: 60}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &224249288311745602
 RectTransform:
@@ -264,9 +265,9 @@ RectTransform:
   m_Father: {fileID: 224161115301299202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -346, y: 5.2}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -24, y: 4.1}
   m_SizeDelta: {x: 61, y: 61}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224339622145751610

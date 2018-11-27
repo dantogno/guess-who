@@ -12,6 +12,7 @@ public class ShowLookedAtEvidence : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //TODO: consider separate camera enter and exit hitboxes
         Evidence lookedAtEvidence = GetLookedAtEvidence();
 
         if (lookedAtEvidence != null)

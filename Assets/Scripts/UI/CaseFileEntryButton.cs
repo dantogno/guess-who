@@ -8,6 +8,9 @@ public class CaseFileEntryButton : MonoBehaviour
     [SerializeField]
     private GameObject newIcon;
 
+    [SerializeField]
+    private Text displayNameText;
+
     private Button button;
 
     private CaseFile caseFile;
@@ -16,11 +19,17 @@ public class CaseFileEntryButton : MonoBehaviour
     {
         this.caseFile = caseFile;
         UpdateNewIconDisplay();
+        UpdateCaseFileNameDisplayText();
     }
 
     public void UpdateNewIconDisplay()
     {
         newIcon.SetActive(caseFile.IsNew);
+    }
+
+    private void UpdateCaseFileNameDisplayText()
+    {
+        displayNameText.text = caseFile.DisplayName;
     }
 
     private void Awake()

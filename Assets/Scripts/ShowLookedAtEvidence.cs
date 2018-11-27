@@ -8,41 +8,37 @@ public class ShowLookedAtEvidence : MonoBehaviour
     private new Camera camera;
 
     private const string evidenceTag = "Evidence";
-    private int lookedAtEvidenceAnimTrigger, hideAnimTrigger;
-    private GameObject currentLookedAtEvidence;
-    private Animator currentEvidenceAnimator;
-
-    private void Awake()
-    {
-        lookedAtEvidenceAnimTrigger = Animator.StringToHash(nameof(lookedAtEvidenceAnimTrigger));
-        hideAnimTrigger = Animator.StringToHash(nameof(hideAnimTrigger));
-    }
+    private Evidence lastLookedAtEvidence; 
 
     private void FixedUpdate()
     {
-        GameObject lookedAtEvidence = GetLookedAtEvidence();
+        Evidence lookedAtEvidence = GetLookedAtEvidence();
 
-        if (lookedAtEvidence != null && lookedAtEvidence != currentLookedAtEvidence)
+        if (lookedAtEvidence != null)
         {
-            if (currentLookedAtEvidence != null)
-                currentEvidenceAnimator.SetTrigger(hideAnimTrigger);
+            if (lastLookedAtEvidence != null)
+                lastLookedAtEvidence.IsBeingLookedAt = false;
 
-            currentLookedAtEvidence = lookedAtEvidence;
-            currentEvidenceAnimator = currentLookedAtEvidence.GetComponent<Animator>();
-            currentEvidenceAnimator.SetTrigger(lookedAtEvidenceAnimTrigger);
+            lookedAtEvidence.IsBeingLookedAt = true;
+            lastLookedAtEvidence = lookedAtEvidence;
+        }
+        else if (lastLookedAtEvidence != null)
+        {
+            lastLookedAtEvidence.IsBeingLookedAt = false;
+            lastLookedAtEvidence = null;
         }
     }
 
-    private GameObject GetLookedAtEvidence()
+    private Evidence GetLookedAtEvidence()
     {
-        GameObject evidenceLookedAt = null;
+        Evidence lookedAtEvidence = null;
 
         RaycastHit raycastHit;
         if (Physics.Raycast(camera.transform.position, camera.transform.forward, out raycastHit, float.PositiveInfinity))
         {
             if (raycastHit.transform.parent.CompareTag(evidenceTag))
-                evidenceLookedAt = raycastHit.transform.parent.gameObject;
+                lookedAtEvidence = raycastHit.transform.parent.gameObject.GetComponent<Evidence>();
         }
-        return evidenceLookedAt;
+        return lookedAtEvidence;
     }
 }

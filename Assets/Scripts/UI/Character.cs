@@ -14,7 +14,8 @@ public enum CharacterID
     Chenkova,
     Ducote,
     Oni,
-    Sonoda
+    Sonoda,
+    Callahan
 }
 
 public class Character : MonoBehaviour
@@ -36,15 +37,11 @@ public class Character : MonoBehaviour
     private string bio = "My life story.";
 
     [SerializeField]
-    private List<string> attributeList;
-
-    [SerializeField]
     private GameObject highlight, newCaseFilesIcon;
 
     [SerializeField]
     private Image portraitImage, portraitHighlightImage;
 
-    public List<string> AttributesList => attributeList;
     public GameObject Highlight => highlight;
     public Sprite PortraitSprite => portraitImage.sprite;
     public Sprite PortraitHighlightSprite => portraitHighlightImage.sprite;

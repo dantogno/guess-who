@@ -86,7 +86,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: EndingPanel/Processing Text Layout Group/period (2)
+    path: EndingPanel/CaseFiledProcessingGroup/Processing Text Layout Group/period
+      (2)
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -168,7 +169,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: EndingPanel/Processing Text Layout Group/period (1)
+    path: EndingPanel/CaseFiledProcessingGroup/Processing Text Layout Group/period
+      (1)
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -214,7 +216,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: EndingPanel/Processing Text Layout Group/period
+    path: EndingPanel/CaseFiledProcessingGroup/Processing Text Layout Group/period
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -236,6 +238,25 @@ AnimationClip:
     path: EndingPanel
     classID: 1
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: EndingPanel/FolderBox Text Panel
+    classID: 1
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 30
   m_WrapMode: 0
@@ -245,21 +266,21 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 954847244
+      path: 3255504317
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 331645903
+      path: 3911605886
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1497455164
+      path: 677619167
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -267,6 +288,13 @@ AnimationClip:
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 2796247286
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 342661640
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -364,7 +392,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: EndingPanel/Processing Text Layout Group/period (2)
+    path: EndingPanel/CaseFiledProcessingGroup/Processing Text Layout Group/period
+      (2)
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -446,7 +475,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: EndingPanel/Processing Text Layout Group/period (1)
+    path: EndingPanel/CaseFiledProcessingGroup/Processing Text Layout Group/period
+      (1)
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -492,7 +522,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: EndingPanel/Processing Text Layout Group/period
+    path: EndingPanel/CaseFiledProcessingGroup/Processing Text Layout Group/period
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -512,6 +542,25 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_IsActive
     path: EndingPanel
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: EndingPanel/FolderBox Text Panel
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []

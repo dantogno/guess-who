@@ -10,6 +10,8 @@ public class ToggleModes : MonoBehaviour
     [SerializeField]
     private CanvasGroup suspectInterfaceCanvasGroup, toggleModesCanvasGroup, scanningCanvasGroup;
 
+    private bool isSuspectCharged;
+
     private void OnEnteredChargeSuspectState()
     {
         SetToggleModesCanvasGroupVisibility(false);
@@ -22,18 +24,33 @@ public class ToggleModes : MonoBehaviour
     {
         ChargeSuspectPopupBehaviour.EnteredChargeSuspectState += OnEnteredChargeSuspectState;
         ChargeSuspectPopupBehaviour.ExitedChargeSuspectState += OnExitedChargeSuspectState;
+        ChargeSuspectMenu.SuspectCharged += OnSuspectCharged;
     }
     private void OnDisable()
     {
         ChargeSuspectPopupBehaviour.EnteredChargeSuspectState -= OnEnteredChargeSuspectState;
         ChargeSuspectPopupBehaviour.ExitedChargeSuspectState -= OnExitedChargeSuspectState;
+        ChargeSuspectMenu.SuspectCharged -= OnSuspectCharged;
     }
 
+    /// <summary>
+    /// Always hides if suspect is charged.
+    /// </summary>
+    /// <param name="isVisible"></param>
     private void SetToggleModesCanvasGroupVisibility(bool isVisible)
     {
-        toggleModesCanvasGroup.alpha = isVisible ? 1 : 0;
-        toggleModesCanvasGroup.blocksRaycasts = isVisible;
-        toggleModesCanvasGroup.interactable = isVisible;
+        bool shouldBeVisible = isSuspectCharged ? false : isVisible;
+        toggleModesCanvasGroup.alpha = shouldBeVisible ? 1 : 0;
+        toggleModesCanvasGroup.blocksRaycasts = shouldBeVisible;
+        toggleModesCanvasGroup.interactable = shouldBeVisible;
+    }
+
+    /// <summary>
+    /// Once a suspect has been charged, we want to hide this.
+    /// </summary>
+    private void OnSuspectCharged()
+    {
+        isSuspectCharged = true;
     }
 
     public void SuspectListToggled(bool isOn)

@@ -14,6 +14,7 @@ public class ChargeSuspectPopupBehaviour : StateMachineBehaviour
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {
+        Debug.Log($"StateInfo: {animatorStateInfo}");
         ExitedChargeSuspectState?.Invoke();
     }
 

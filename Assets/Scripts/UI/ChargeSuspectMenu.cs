@@ -11,7 +11,7 @@ public class ChargeSuspectMenu : MonoBehaviour
 
     public void SubmitButtonClicked()
     {
-
+        SuspectInterface.Instance.HandleSubmitButtonClicked();
     }
 
     public void CancelButtonClicked()

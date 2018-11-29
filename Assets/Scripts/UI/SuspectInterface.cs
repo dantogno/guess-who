@@ -28,6 +28,7 @@ public class SuspectInterface : MonoBehaviour
     private int goToChargeSuspectAnimTrigger = Animator.StringToHash(nameof(goToChargeSuspectAnimTrigger));
     private int goToSuspectListAnimTrigger = Animator.StringToHash(nameof(goToSuspectListAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
+    private int submitAnimTrigger = Animator.StringToHash(nameof(submitAnimTrigger));
     private Animator animator;
     private List<CaseFileEntryButton> caseFileButtons = new List<CaseFileEntryButton>();
 
@@ -55,6 +56,11 @@ public class SuspectInterface : MonoBehaviour
     public void GoToChargeSuspectState()
     {
         animator.SetTrigger(goToChargeSuspectAnimTrigger);
+    }
+
+    public void HandleSubmitButtonClicked()
+    {
+        animator.SetTrigger(submitAnimTrigger);
     }
 
     private void InitializeStateMachineBehaviours()

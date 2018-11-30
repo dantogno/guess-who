@@ -79,6 +79,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28a680950d7044a56c86cba9163b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114595538504783654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f55e8a717dbe24ba4d42a7d1702f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedTextColor: {r: 1, g: 0.29411766, b: 0.20000002, a: 1}
+  correctColor: {r: 0.03529412, g: 0.7294118, b: 0.11764707, a: 1}
+  correctExtendedMessageText: Good work, agent. Another scumbag junker sentenced to
+    the Rig.
+  failedExtendedMessageText: "Poor choice, agent. The jury found the suspect NOT GUILTY,
+    citing a lack of evidence in your case. \n\nReport to the Institute for cerebral
+    realignment."
 --- !u!114 &114880421335683704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -507,7 +525,8 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114595538504783654}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1

@@ -8,11 +8,14 @@ using UnityEngine.UI;
 public class SuspectInterface : MonoBehaviour
 {
     [SerializeField]
+    private CharacterID guiltyParty;
+
+    [SerializeField]
     private Image selectedSuspectPortraitImage, selectedSuspectPortraitHighlightImage;
 
     [SerializeField]
     private Text selectedSuspectNameText, selectedSuspectAgeText, selectedSuspectOccupationText, mainText, mainTextLabel,
-        caseFileSelectedHeading;
+        caseFileSelectedHeading, extendedSolvedMessageText, resultsHeaderText;
 
     [SerializeField]
     private GameObject caseFileButtonPrefab;
@@ -23,6 +26,7 @@ public class SuspectInterface : MonoBehaviour
     private SuspectSelectedBehaviour suspectSelectedBehaviour;
     private SuspectListBehaviour suspectListBehaviour;
     private CaseFileSelectedBehaviour caseFileSelectedBehaviour;
+    private CaseSolvedBehaviour caseSolvedBehaviour;
     private int goToSuspectSelectedAnimTrigger = Animator.StringToHash(nameof(goToSuspectSelectedAnimTrigger));
     private int goToCaseFileSelectedAnimTrigger = Animator.StringToHash(nameof(goToCaseFileSelectedAnimTrigger));
     private int goToChargeSuspectAnimTrigger = Animator.StringToHash(nameof(goToChargeSuspectAnimTrigger));
@@ -33,6 +37,8 @@ public class SuspectInterface : MonoBehaviour
     private List<CaseFileEntryButton> caseFileButtons = new List<CaseFileEntryButton>();
 
     public static SuspectInterface Instance { get; private set; }
+
+    public bool IsCaseSolvedCorrectly => guiltyParty == suspectSelectedBehaviour.SelectedCharacter.CharacterID;
 
     private void Awake()
     {
@@ -71,6 +77,8 @@ public class SuspectInterface : MonoBehaviour
         suspectListBehaviour = animator.GetBehaviour<SuspectListBehaviour>();
         caseFileSelectedBehaviour = animator.GetBehaviour<CaseFileSelectedBehaviour>();
         caseFileSelectedBehaviour.Initialize(caseFileSelectedHeading, mainText);
+        caseSolvedBehaviour = animator.GetBehaviour<CaseSolvedBehaviour>();
+        caseSolvedBehaviour.Initialize(extendedSolvedMessageText, resultsHeaderText);
     }
 
     private void GenerateCaseFileButtons(Character selectedCharacter)

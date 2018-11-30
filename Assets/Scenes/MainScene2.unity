@@ -483,11 +483,10 @@ Prefab:
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: bio
-      value: Lenard is a well known Netrunner who deals in banned substances and political
-        blackmail. A avid VR lounger, Lenard usually spends most of his free time
-        maintaining his dominance on the VR Leaderboards. His recent gaming habits,
-        has put himself into severe financial debt, complicating his relationships
-        with his customers.
+      value: 'Callahan is a well-known Netrunner who traffics in banned substances
+        and political blackmail. An avid VR lounger, Callahan spends his free time
+        dominating the VR leaderboards. His recent gaming habits have put him into
+        severe financial debt, complicating his relationships with his customers. '
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
@@ -588,7 +587,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-253216
+  m_Name: pb_Mesh99182
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1383,7 +1382,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.266
+      value: -0.246
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1391,7 +1390,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.283
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1747,6 +1746,7 @@ Transform:
   m_Children:
   - {fileID: 1402639163}
   - {fileID: 1276178840}
+  - {fileID: 543257979}
   m_Father: {fileID: 1315968882}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1940,7 +1940,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.266
+      value: 0.024
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1948,7 +1948,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.283
+      value: -0.015
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1974,12 +1974,12 @@ Prefab:
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1325605474}
+      objectReference: {fileID: 1665716577}
     - target: {fileID: 33248936814430088, guid: ae15185708085cf4db0fd937302baf1c,
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1325605474}
+      objectReference: {fileID: 1665716577}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.99999994
@@ -2014,8 +2014,7 @@ Prefab:
     - target: {fileID: 114168104990232014, guid: ae15185708085cf4db0fd937302baf1c,
         type: 2}
       propertyPath: evidenceARDisplayText
-      value: "Victim identified: Leonard Callahan.\r\nApprox. time of death: 18:31.\r\nBlunt
-        force wound and bloodstream neurotoxin detected.\r"
+      value: "Victim identified: Leonard Callahan.\r\nApprox. time of death: 18:31.\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
@@ -2340,7 +2339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 5
   fileNumber: 2
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 1286853545}
   fileText: "FORENSIC ANALYSIS\r\n\nLucius Sonoda\u2019s DNA was found on the couch.\r"
 --- !u!1 &384758515
@@ -2508,7 +2507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 5
   fileNumber: 3
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 1448815850}
   fileText: "NEWS HEADLINE\r\n\nSonoda vs. VR: The bitter rivalry. Will he finally
     succeed? \r"
@@ -2757,7 +2756,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-253066
+  m_Name: pb_Mesh97806
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3224,6 +3223,19 @@ Prefab:
       propertyPath: m_Name
       value: Character Panel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: bio
+      value: 'Rocheford inherited the Auto Dyne Systems fortune upon the recent death
+        of his mother. Seizing opportunity on the moon, he invests most of the inheritance
+        in establishing the first lunar VR lounges. He retains exclusive patents for
+        the next 78 years. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
+        type: 2}
+      propertyPath: occupation
+      value: VR Lounge Owner
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4121c37bc56834cbcfbee1be36be2b, type: 2}
   m_IsPrefabAsset: 0
@@ -3232,7 +3244,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-2546
+  m_Name: pb_Mesh96930
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3551,7 +3563,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-2186
+  m_Name: pb_Mesh98908
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3791,6 +3803,60 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 504554719}
   m_CullTransparentMesh: 0
+--- !u!1 &543257978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543257979}
+  - component: {fileID: 543257980}
+  m_Layer: 0
+  m_Name: Callahan3 - body (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &543257979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543257978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 239472951}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &543257980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543257978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 056b531e12b3ea54a9c6c3f7fdca37b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  associatedCharacter: 6
+  fileNumber: 3
+  isLocked: 1
+  linkedCaseFileToUnlockWith: {fileID: 239472952}
+  fileText: 'REPORT
+
+
+    - Approximate time of death: 18:31
+
+
+    - Blunt force trauma has fractured skull.
+
+
+    - Traces of neurotoxin detected in bloodstream.'
 --- !u!1 &547292289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,7 +4200,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.311
+      value: -0.278
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4142,7 +4208,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.006
+      value: 0.023
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4227,7 +4293,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.354
+      value: 0.331
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4235,7 +4301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.222
+      value: 0.233
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4321,7 +4387,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.178
+      value: 0.225
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4329,7 +4395,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.023
+      value: -0.008
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4535,7 +4601,7 @@ Prefab:
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: characterName
-      value: Zen Oni
+      value: ZenOni
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
@@ -4545,14 +4611,17 @@ Prefab:
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: bio
-      value: "Zen Oni is a commercial android that maintains and updates VR lounges
-        owned by ADS. Zen has several synthetic implants that allow it to perform
-        delicate operations on ADS\u2019s highly advanced VR technologies. "
+      value: "ZenOni is a commercial android that maintains and updates VR lounges.\r\n\r\nMaintenance
+        droids provide nutritional supplements to VR lounge patrons through intravenous
+        drips. This allows patrons to remain in VR for extended lengths of time. Periods
+        exceeding 12 hours are not uncommon.\r\n\r\nZenOni has several synthetic implants
+        that allow it to perform delicate operations on customers as well as repair
+        sophisticated VR technologies.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: occupation
-      value: VR Machinist for Atomic Dyno Systems
+      value: VR Maintenance Droid
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
@@ -4991,7 +5060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 3
   fileNumber: 2
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 1286853545}
   fileText: "TEXT MESSAGE TRANSCRIPT\r\n\nSonoda 9:36> Roche owed me a favor, gave
     me keys to VR. Private \u201Cmeeting\u201D?\r\n\nDucote 9:42> Omw\r"
@@ -5264,7 +5333,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.311
+      value: 0.288
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5272,7 +5341,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.276
+      value: -0.247
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5375,7 +5444,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 879658564}
-  m_Mesh: {fileID: 1873313232}
+  m_Mesh: {fileID: 1771245461}
 --- !u!23 &879658566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5391,7 +5460,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 1638497694}
+  - {fileID: 1490714048}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5444,14 +5513,14 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: CP_tabloidTest
+  mTrackableName: boardARScan
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/guess-who.xml
-  mAspectRatio: 0.6470588
+  mAspectRatio: 0.64731747
   mImageTargetType: 0
-  mWidth: 0.4318
-  mHeight: 0.2794
+  mWidth: 0.7232
+  mHeight: 0.46814
 --- !u!4 &879658570
 Transform:
   m_ObjectHideFlags: 0
@@ -5460,7 +5529,7 @@ Transform:
   m_GameObject: {fileID: 879658564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3901, y: 0, z: 0}
-  m_LocalScale: {x: 0.4318, y: 0.4318, z: 0.4318}
+  m_LocalScale: {x: 0.7232, y: 0.7232, z: 0.7232}
   m_Children:
   - {fileID: 1014430048}
   - {fileID: 1829003309}
@@ -5728,7 +5797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 0
   fileNumber: 2
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 1772877335}
   fileText: "SUSPECT TESTIMONY\r\n\nAGENT 1> Describe your movements on the night
     of the murder.\r\n\nRocheford> I left work at the lounge around 17:00, as usual.
@@ -6016,10 +6085,10 @@ Prefab:
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: bio
-      value: "Alderman Sonoda is a credible government official who is trying to ban
-        VR lounges from Cabeus city. Sonoda believes that these lounges are covers
-        for illicit activities and illegal trade. He has been conducting \u201Cresearch\u201D
-        on each establishment to bolster his anti-VR campaign"
+      value: "Alderman Sonoda is a government official who is trying to ban VR lounges
+        from Cabeus City. Sonoda believes that these lounges are covers for illicit
+        activities and illegal trade. He has been conducting \u201Cresearch\u201D
+        on each establishments to bolster his anti-VR campaign."
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
@@ -6179,7 +6248,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-253576
+  m_Name: pb_Mesh97190
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6918,16 +6987,16 @@ Prefab:
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: occupation
-      value: 'Pro Blaze Ball Player for the Cryo Techs '
+      value: 'Professional BlazeBall Player for the Cryo Techs '
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: bio
-      value: 'A rising star in the Lunar League. Maehi hopes to become the first organic
-        to score over 10,000 blitz in a single season. Recent rumours have suggested
-        that Maehi has been using banned supplements to improve her stats. She is
-        always seen carrying her signature Blaze Bat. She was last seen yesterday
-        arguing with an individual at the VR lounge. '
+      value: 'A rising star in the Lunar BlazeBall League. She hopes to be the first
+        organic to score over 10,000 blitz in a single season. Recent rumours have
+        suggested that Miko has been using banned supplements to improve her stats.
+        She is always seen carrying her signature BlazeBall bat. She was last seen
+        yesterday arguing with someone at the VR lounge. '
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
@@ -7274,7 +7343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 6
   fileNumber: 3
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 239472952}
   fileText: "TEXT MESSAGE TRANSCRIPT\r\n\nChenkova 18:48> \u201CI\u2019m tired of
     this shit, Leonard. You\u2019ve got yours. I need mine. I\u2019m coming for it.\u201D"
@@ -7543,7 +7612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 4
   fileNumber: 2
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 0}
   fileText: "WIKIPEDIA EXCERPT\r\n\nThe blue-ringed octopus, despite its small size,
     carries enough venom to kill twenty-six adult humans within minutes. Their bites
@@ -7951,7 +8020,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-412678
+  m_Name: pb_Mesh97596
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -8110,7 +8179,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.274
+      value: -0.263
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8118,7 +8187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.212
+      value: 0.219
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8275,7 +8344,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.152
+      value: -0.143
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8283,7 +8352,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.081
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8456,7 +8525,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-253366
+  m_Name: pb_Mesh96280
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -8648,7 +8717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 6
   fileNumber: 2
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 239472952}
   fileText: "LUNARLIST AD TRANSCRIPT\r\n\nNetrunner available, will work for cheap.
     Anything goes. Contact callahan.nr on LunarList.\r"
@@ -9032,6 +9101,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45648db15f03d5c4cb4456d9b1ae3f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &1490714048
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 'boardARScanMaterial
+
+    108660'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 56ef3aa8450d40dfbce509314f747d30, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &1512755176
 Prefab:
   m_ObjectHideFlags: 0
@@ -9041,7 +9137,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.194
+      value: 0.183
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -9049,7 +9145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.123
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9352,7 +9448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 1
   fileNumber: 3
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 1243659586}
   fileText: "SUSPECT TESTIMONY\r\n\nAGENT 1> We know you were at the crime scene around
     the time of death...\r\n\r\nMiko> I stuck around because I had a chance at the
@@ -9478,7 +9574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedCharacter: 1
   fileNumber: 4
-  isLocked: 0
+  isLocked: 1
   linkedCaseFileToUnlockWith: {fileID: 1167320440}
   fileText: "OFFICIAL BLAZEBALL WARNING LEVEL 1\r\n\nMaehi Miko: Your bi-monthly biosystem
     scan has revealed extensive use of banned substances. Narcotics use is strictly
@@ -9494,7 +9590,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.295
+      value: -0.297
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -9502,7 +9598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.14
+      value: -0.117
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9813,33 +9909,161 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
---- !u!21 &1638497694
-Material:
-  serializedVersion: 6
+--- !u!43 &1665716577
+Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 'CP_tabloidTestMaterial
-
-    58272'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 236be2420dcc4928aee85ea94844fd1d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_Name: pb_Mesh109958
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: -0.13158727, y: 0.06796169, z: 0.01793605}
+      m_Extent: {x: 1.5926197, y: 0.06796169, z: 0.73167914}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 56
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 64
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1728
+    _typelessdata: d0b2dcbf00000000c8e63f3f00000000000000000000803f000080bf0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dc3f000000006f12833b6f12833b1c03bb3f00000000c8e63f3f00000000000000000000803f000080bf0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bbbf0000000075386c3f6f12833bd0b2dcbf802f0b3ec8e63f3f00000000000000000000803f000080bf0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dc3f802f0b3ea415833bddf7303d1c03bb3f802f0b3ec8e63f3f00000000000000000000803f000080bf0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bbbf802f0b3e7c386c3fddf7303d1c03bb3f00000000c8e63f3f0000803f000000000000000000000000000000000000803f000080bf0000803f0000803f0000803f0000803fc8e63f3f00000000ab14833be84c713f1c03bb3f00000000deb736bf0000803f000000000000000000000000000000000000803f000080bf0000803f0000803f0000803f0000803fdeb736bf00000000c627da3ee84c713f1c03bb3f802f0b3ec8e63f3f0000803f000000000000000000000000000000000000803f000080bf0000803f0000803f0000803f0000803fc8e63f3f802f0b3e6f12833b41567b3f1c03bb3f802f0b3edeb736bf0000803f000000000000000000000000000000000000803f000080bf0000803f0000803f0000803f0000803fdeb736bf802f0b3ebd27da3e41567b3f1c03bb3f00000000deb736bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bb3f000000006f12833b2a5a413dd0b2dcbf00000000deb736bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dcbf0000000075386c3f2a5a413d1c03bb3f802f0b3edeb736bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bb3f802f0b3ea415833bddf7b03dd0b2dcbf802f0b3edeb736bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dcbf802f0b3e7c386c3fddf7b03dd0b2dcbf00000000deb736bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f0000803f0000803fdeb7363f000000001934dc3ee84c713fd0b2dcbf00000000c8e63f3f000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f0000803f0000803fc8e63fbf00000000c6275a3fe84c713fd0b2dcbf802f0b3edeb736bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f0000803f0000803fdeb7363f802f0b3e1034dc3e41567b3fd0b2dcbf802f0b3ec8e63f3f000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f0000803f0000803fc8e63fbf802f0b3ec2275a3f41567b3fd0b2dcbf802f0b3ec8e63f3f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dcbfc8e63f3f6c386c3fc346703f1c03bb3f802f0b3ec8e63f3f000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bb3fc8e63f3f6f12833bc346703fd0b2dcbf802f0b3edeb736bf000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dcbfdeb736bf78386c3f0439043f1c03bb3f802f0b3edeb736bf000000000000803f000000000000803f0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bb3fdeb736bf9f18833b0439043fd0b2dcbf00000000deb736bf00000000000080bf00000000000080bf0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dc3fdeb736bf9f18833b0429b93d1c03bb3f00000000deb736bf00000000000080bf00000000000080bf0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bbbfdeb736bf78386c3f0429b93dd0b2dcbf00000000c8e63f3f00000000000080bf00000000000080bf0000000000000000000080bf0000803f0000803f0000803f0000803fd0b2dc3fc8e63f3f6f12833bdf32033f1c03bb3f00000000c8e63f3f00000000000080bf00000000000080bf0000000000000000000080bf0000803f0000803f0000803f0000803f1c03bbbfc8e63f3f6c386c3fdf32033f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.13158727, y: 0.06796169, z: 0.01793605}
+    m_Extent: {x: 1.5926197, y: 0.06796169, z: 0.73167914}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
 --- !u!1 &1683950573
 GameObject:
   m_ObjectHideFlags: 0
@@ -9977,12 +10201,12 @@ Prefab:
     - target: {fileID: 224036640454944634, guid: ae15185708085cf4db0fd937302baf1c,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224666877730695546, guid: ae15185708085cf4db0fd937302baf1c,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 114168104990232014, guid: ae15185708085cf4db0fd937302baf1c,
         type: 2}
@@ -9994,6 +10218,10 @@ Prefab:
       propertyPath: evidenceARDisplayText
       value: A damaged pair of cybernetic eyeglasses has been left on the scene. Fingerprint
         on the lens.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512229285593872, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
@@ -10028,7 +10256,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-254042
+  m_Name: pb_Mesh97870
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10183,7 +10411,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-3002
+  m_Name: pb_Mesh98792
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10375,6 +10603,161 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95ce64615311fdf408af72de6f5ce651, type: 2}
   m_IsPrefabAsset: 0
+--- !u!43 &1771245461
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ImageTargetMesh108650
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0, z: 0.32365873}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf0000000099b6a5be000000000000803f000000000000000000000000000000bf0000000099b6a53e000000000000803f00000000000000000000803f0000003f0000000099b6a5be000000000000803f000000000000803f000000000000003f0000000099b6a53e000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0, z: 0.32365873}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
 --- !u!1 &1772877334
 GameObject:
   m_ObjectHideFlags: 0
@@ -10483,7 +10866,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.002
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -10491,7 +10874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.232
+      value: 0.071
       objectReference: {fileID: 0}
     - target: {fileID: 4111754138563806, guid: ae15185708085cf4db0fd937302baf1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10779,161 +11162,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2080168563}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!43 &1873313232
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ImageTargetMesh58262
-  serializedVersion: 9
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.3235294}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 2
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf00000000a5a5a5be000000000000803f000000000000000000000000000000bf00000000a5a5a53e000000000000803f00000000000000000000803f0000003f00000000a5a5a5be000000000000803f000000000000803f000000000000003f00000000a5a5a53e000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0, z: 0.3235294}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimized: 0
 --- !u!1 &1886491230
 GameObject:
   m_ObjectHideFlags: 0
@@ -11772,7 +12000,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-254402
+  m_Name: pb_Mesh98360
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -11927,7 +12155,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-254552
+  m_Name: pb_Mesh96398
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -12468,10 +12696,9 @@ Prefab:
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}
       propertyPath: bio
-      value: "\rChenkova belongs to a black dealer organization called the \u201CThird
-        Sun\u201D. The notorious gang specializes in smuggling black market technologies
-        and substances. Also known as the \u201CWhite Bear\u201D, Chenkova is ruthless
-        in his attempts to collect unpaid debts. \r\n"
+      value: Chenkova belongs to the Third Sun, a notorious gang that specializes
+        in smuggling black market technologies and substances. Chenkova, known as
+        the White Bear, is ruthless in his attempts to collect unpaid debts.
       objectReference: {fileID: 0}
     - target: {fileID: 114954250937413848, guid: 5c4121c37bc56834cbcfbee1be36be2b,
         type: 2}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="boardARScan" size="0.723200 0.468140" />
     <ImageTarget name="CP_tabloidTest" size="0.431800 0.279400" />
     <ImageTarget name="sceneANov2018-10inch" size="0.254000 0.190500" />
     <ImageTarget name="scaledCrimeScene63percent" size="0.267000 0.187183" />

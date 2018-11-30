@@ -6,11 +6,18 @@ using UnityEngine.UI;
 
 public class Evidence : MonoBehaviour
 {
+    [TextArea(3,5)]
+    [SerializeField]
+    private string evidenceARDisplayText;
+
     [SerializeField]
     private CaseFile caseFileToUnlock;
 
     [SerializeField]
     private Text evidenceCanvasHeading;
+
+    [SerializeField]
+    private Text evidenceARText;
 
     private Animator animator;
     private int isLockedAnimParam = Animator.StringToHash(nameof(isLockedAnimParam));
@@ -39,6 +46,7 @@ public class Evidence : MonoBehaviour
         animator.SetBool(isLockedAnimParam, caseFileToUnlock.IsLocked);
         evidenceCanvasHeading.text = caseFileToUnlock.UnlocksLinkedCaseFiles ? 
             multiplePrefix : headingPrefix + caseFileToUnlock.DisplayName;
+        evidenceARText.text = evidenceARDisplayText;
     }
 
     public void UnlockCaseFile()

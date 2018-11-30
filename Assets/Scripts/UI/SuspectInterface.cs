@@ -33,6 +33,8 @@ public class SuspectInterface : MonoBehaviour
     private int goToSuspectListAnimTrigger = Animator.StringToHash(nameof(goToSuspectListAnimTrigger));
     private int backAnimTrigger = Animator.StringToHash(nameof(backAnimTrigger));
     private int submitAnimTrigger = Animator.StringToHash(nameof(submitAnimTrigger));
+    private int goToHamburgerMenuAnimTrigger = Animator.StringToHash(nameof(goToHamburgerMenuAnimTrigger));
+
     private Animator animator;
     private List<CaseFileEntryButton> caseFileButtons = new List<CaseFileEntryButton>();
 
@@ -52,6 +54,11 @@ public class SuspectInterface : MonoBehaviour
         GenerateCaseFileButtons(selectedCharacter);
         suspectSelectedBehaviour.SelectedCharacter = selectedCharacter;
         animator.SetTrigger(goToSuspectSelectedAnimTrigger);
+    }
+
+    public void GoToHamburgerMenu()
+    {
+        animator.SetTrigger(goToHamburgerMenuAnimTrigger);
     }
 
     public void GoToSuspectListState()

@@ -961,8 +961,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4addbeb295a0045b96227a0be2f746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  evidenceARDisplayText: 
   caseFileToUnlock: {fileID: 0}
   evidenceCanvasHeading: {fileID: 114213720001847460}
+  evidenceARText: {fileID: 114492579419557580}
 --- !u!114 &114213720001847460
 MonoBehaviour:
   m_ObjectHideFlags: 1

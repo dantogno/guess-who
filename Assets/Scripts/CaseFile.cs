@@ -6,7 +6,7 @@ using UnityEngine;
 public class CaseFile : MonoBehaviour
 {
     public static event Action CaseFileUnlocked;
-    public static List<CaseFile> AllCaseFiles { get; private set; } = new List<CaseFile>();
+    public static List<CaseFile> AllCaseFiles { get; set; } = new List<CaseFile>();
 
     [SerializeField]
     private CharacterID associatedCharacter;
